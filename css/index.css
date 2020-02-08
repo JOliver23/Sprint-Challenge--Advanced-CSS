@@ -263,10 +263,9 @@ footer {
 @media (max-width: 500px) {
   .home .walk {
     flex-flow: column wrap;
-    justify-content: flex-start;
-    padding: 0 auto;
+    justify-content: space-evenly;
+    padding: 0 1rem;
     margin: 1rem 1rem;
-    border: 1px solid black;
   }
 }
 .home .walk .walk-text {
@@ -338,6 +337,11 @@ footer {
     color: #81848E;
   }
 }
+@media (max-width: 500px) {
+  .home .walk .walk-text .btn:hover {
+    width: 100%;
+  }
+}
 .home .walk .walk-img {
   width: 46%;
   margin-left: 4%;
@@ -345,7 +349,8 @@ footer {
 @media (max-width: 500px) {
   .home .walk .walk-img {
     order: 1;
-    width: 90%;
+    width: 95%;
+    margin: 1.5rem 0 1.5rem 0;
   }
 }
 .home .walk .walk-img img {

@@ -68,10 +68,10 @@
 
     @media @phone {
       flex-flow: column wrap;
-      justify-content: flex-start;
-      padding: 0 auto;
+      justify-content: space-evenly;
+      padding: 0 1rem;
       margin: 1rem 1rem;
-      border: 1px solid black;
+  
     }
 
     .walk-text {
@@ -108,6 +108,10 @@
           });
       
          .animation(color-fade 1.2s linear infinite alternate);
+
+         @media @phone {
+           width:100%;
+         }
         }//hover
        }//.btn
       
@@ -119,7 +123,8 @@
 
       @media @phone {
         order: 1;
-        width: 90%;
+        width: 95%;
+        margin: 1.5rem 0 1.5rem 0;
       }
       
       img {
