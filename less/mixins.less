@@ -17,3 +17,14 @@
     color: @nav-font;
     font-size: 2rem;
 }
+
+//button mix-in
+.button(@color, @bg-color, @radius) {
+    color: @color;
+    font-size: 2rem;
+    background: @bg-color;
+    border-radius: @radius;
+    width: 85%;
+    padding: 1rem;
+    text-align: center;
+}
