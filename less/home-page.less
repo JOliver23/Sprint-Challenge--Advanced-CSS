@@ -73,7 +73,18 @@
 
       .btn{
        .butt(white, @btn-bg-color, 10px);
-      }//.btn
+
+       &:hover {
+         .keyframes(color-fade;{
+          0% { background: @wild-sand; color: @river-bend; }
+          50% { background: @ebony-clay; color: @sea-shell;}
+          100% { background: @porcelain; color: @waterloo;}
+          });
+      
+         .animation(color-fade 1.2s linear infinite alternate)
+        }//hover
+       }//.btn
+      
     }//walk-text
 
     .walk-img {

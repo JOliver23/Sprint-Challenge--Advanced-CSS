@@ -28,3 +28,13 @@
     padding: 1rem;
     text-align: center;
 }
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+    -moz-animation: @arguments;
+}
