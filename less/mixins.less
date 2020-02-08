@@ -19,12 +19,12 @@
 }
 
 //button mix-in
-.butt(@color) {
+.butt(@color, @bg-color, @radius) {
     color: @color;
     font-size: 2rem;
-    background: @btn-bg-color;
-    border-radius: 10px;
-    width: 85%;
+    background: @bg-color;
+    border-radius: @radius;
+    width: 40%;
     padding: 1rem;
     text-align: center;
 }
