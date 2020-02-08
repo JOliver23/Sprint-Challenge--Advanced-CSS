@@ -34,13 +34,23 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+Relatively similar in that they both resize content/size/position, but responsive design is a smooth transition of content for varying screen size or window size. Adaptive is a more aggressive transition as it snaps to different sizes because it is set in absolute units like pixels. The reason for responsive smooth transitions is due to the assigning of relative measurements like percentages/ems/rems.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+To build a mobile first site means to build the web page for smaller screens first, and to adapt the sight using media breakpoints to grow content for a better display on tablets, desktops or larger screens. This means your break points would be using min-widths instead of max-widths.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+This has to do with the accessability of web-design, a font-size of 62.5% sets rem units to 10px making the math easier for scaling a page with a universal measurement across the page.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+I would describe it as a organizational tool for building CSS. An easier way of building a projects CSS in that when we look at a preprocessor like LESS, we tell it we want to build a section that shares properties with other section on a page, we can use tools like variables and mix-ins to reduce repetitive code (DRY). Scary at first, but the concept of nesting is an irreplacable tool.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+My favorite concept of preprocessing are mix-ins, building a mix-in for flex properties is super useful in building a site. Having a couple flex mix-ins with varying directions and justifications makes for an easier responsive build and cleaner code. The concept that gives me the most trouble is parametric mix-ins, but more specifically using animations with in mix-ins. I had a hard time understanding how to declare a mix-in, and what arguments to place into the parameters so when i call the mix-in, in a class, it works as intended.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,27 +60,27 @@ Follow these steps to set up your project:
 
 ### Git Set up
 
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [x] Create a forked copy of this project.
+- [x] Add your project manager as collaborator on Github.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push origin `<firstName-lastName>`.
  
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
  
 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+* [x] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
+* [x] Open your terminal and navigate to your preprocessing project by using the `cd` command
+* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
+* [x] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
+* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
 
 ## Minimum Viable Product
 
@@ -78,7 +88,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [x] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
