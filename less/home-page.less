@@ -1,8 +1,17 @@
 // Home Content
 
 .home {
+  @media @phone {
+    margin: 0 auto;
+  }
 
   .intro {
+    img{
+      @media @phone{
+        width:100%;
+        border-radius: .5rem;
+      }
+    }
 
     h2 {
       padding: 15px;
@@ -18,13 +27,29 @@
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
-    }
+      @media @phone {
+        width: 90%;
+
+      } 
+    }//img
+
+    .sky {
+        @media @phone {
+          display: none;
+        }
+    }//.sky
+
+    .launch {
+        @media @phone {
+          display: none;
+        }
+    }//.launch
   }
 
   .visit-planets {
@@ -35,6 +60,7 @@
     }
 
     p {
+     
       margin-top: 13px;
     }
   }
@@ -46,24 +72,66 @@
     display: flex;
     justify-content: center;
 
+    @media @phone {
+      flex-flow: column wrap;
+      justify-content: space-evenly;
+      padding: 0 1rem;
+      margin: 1rem 1rem;
+  
+    }
+
     .walk-text {
       width: 50%;
 
+      @media @phone {
+        order: 2;
+        width: 90%;
+      }
+
       h3 {
         margin-bottom: 10px;
-      }
+      }//h3
 
       p {
         margin-bottom: 26px;
-      }
+      }//p
 
-      .btn {
-      }
-    }
+      .btn{
+       .butt(white, @btn-bg-color, 10px);
+
+       @media @phone {
+         width:100%;
+         border-radius: .5rem;
+       }
+
+       &:hover {
+         .butt(@btn-bg-color, white, 10px);
+
+         .keyframes(color-fade;{
+          0% { background: @wild-sand; color: @river-bend; }
+          50% { background: @ebony-clay; color: @sea-shell;}
+          100% { background: @porcelain; color: @waterloo;}
+          });
+      
+         .animation(color-fade 1.2s linear infinite alternate);
+
+         @media @phone {
+           width:100%;
+         }
+        }//hover
+       }//.btn
+      
+    }//walk-text
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
+
+      @media @phone {
+        order: 1;
+        width: 95%;
+        margin: 1.5rem 0 1.5rem 0;
+      }
       
       img {
         width: 100%;

@@ -1,1 +1,40 @@
 // Mixins Here
+.nav-flex() {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-flex() {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.link-dec () {
+    text-decoration: none;
+    color: @nav-font;
+    font-size: 2rem;
+}
+
+//button mix-in
+.butt(@color, @bg-color, @radius) {
+    color: @color;
+    font-size: 2rem;
+    background: @bg-color;
+    border-radius: @radius;
+    width: 40%;
+    padding: 1rem;
+    text-align: center;
+}
+
+.keyframes(@name; @arguments) {
+	@-moz-keyframes @name { @arguments(); }
+	@-webkit-keyframes @name { @arguments(); }
+}
+
+.animation(@arguments) {
+	-webkit-animation: @arguments;
+    -moz-animation: @arguments;
+}
